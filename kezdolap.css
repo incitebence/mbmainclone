@@ -1,0 +1,460 @@
+
+body{
+    margin: 0px;
+    margin-bottom: -16px;
+    padding: 0;
+}
+
+
+.logo img{
+    margin-top: 0px;
+    margin-bottom: -0px;
+    width: 90px;
+    padding-left: 40%;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+
+
+
+
+header{
+    background-color: black;
+    z-index: 1;
+    position: sticky;
+    z-index:1; 
+    width:100%;
+    text-align:center;
+    vertical-align:middle;
+    line-height:50px;
+    top: 0px;
+}
+
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color:  #3D6CFC;
+} 
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display:block
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+     .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+     }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -108%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.activate{
+        left: 0;
+    }
+}
+
+
+.h{ 
+    width: 13%;
+    height: 2px;   
+    border: 0 none; 
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+h1{
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+
+
+h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn{
+    background-color: #3D6CFC;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 40px; 
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover{
+    background-color: rgb(55, 55, 252);
+}
+
+
+.div-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.div-img{
+    z-index: -1;
+    position: relative;
+}
+
+.test{ 
+    position:absolute;
+    top: 10vw;
+    padding-left: 16%;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-stretch: semi-condensed;
+    width: auto;
+}
+
+
+
+
+.div-img2 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.div-img2{
+    position: relative;
+}
+
+
+.test2{    
+    position: absolute;
+    bottom: 4vw;
+    padding-left: 22%; 
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: auto;
+}
+
+
+.test2 i{
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1em; 
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3vw;
+    justify-items: auto;
+}
+
+@media screen and (max-width: 600px){
+    .btn {
+        padding: 13px;
+    }
+
+    .div-img2 img {
+        height: 7rem;
+    }
+
+    .test2 {
+        padding-left: 7%; 
+    }
+
+   .test2 i {
+        top: 3.6vw;
+        font-size: 1.9vw;
+        justify-items: auto;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+b{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+.div-img3{
+    position: relative;
+    top: -4px;
+}
+
+.div-img3 img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+
+.test3{ 
+    position:absolute;
+    top: 18vw;
+    padding-left: 35%;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight:300;
+    font-stretch: semi-condensed;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .test {
+        top: 6vw;
+    }
+    
+    .test3 {
+            top: 11vw;
+            padding-left: 24%;
+        }
+}
+
+
+.blog{
+    background-color: black;
+    margin-top: -12px;
+    padding-top: 30px;
+
+}
+
+#blogfont{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+article{
+    color: white;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+}
+
+.postcard{
+    background-color: white;
+    border-radius: 8px;
+    height: 480px;
+    width: 350px;
+    position: relative
+}
+
+
+.postcard img{
+    position: absolute;
+    width: 350px;
+    height: 210px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posttext{
+    top: 260px;
+    padding-left: 20px;
+    position: relative;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: inherit;
+}
+
+.post-leírás{
+    padding-top: 10px;
+}
+
+
+
+
+.posttext h3{
+    text-decoration: none;
+    color: #3D6CFC;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.olvass-tovább{
+    color: #CE0A0A;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.postdátum{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3em;
+    padding-bottom: 1px;
+    position: absolute; 
+}
+
+
+footer{
+    background-color: #171412;
+    color: #B4B4B4;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+
+.copyright{
+    padding-bottom: 18px;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 29px;
+    padding-bottom: 10px;
+}
+
+.ikon img{
+    min-width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+#margin img{
+    margin: 10px 15px;
+}
+
+.ikon{
+    background-color: #948c8a;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    margin: 4px;
+    border-style: circle;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+.ikon:hover{
+    background-color: #625c5c;
+}
+
+
+
+ .back-video{
+ width: 100%;
+ height: auto;
+}
